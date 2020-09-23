@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Hegic.TwoWheeler.Data.Interface.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shopping.Portal.Model\Shopping.Portal.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HDFC.Shared.Entities">
+      <HintPath>..\Sharedbin\HDFC.Shared.Entities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

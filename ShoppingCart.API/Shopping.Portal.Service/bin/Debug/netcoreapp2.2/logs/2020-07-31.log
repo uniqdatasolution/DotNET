@@ -1,0 +1,154 @@
+                            -----------Time Stamp: 2020-07-31 16:05:59.3493----------                             Log Level: Info
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : GetAstrologerList - GetAstrologerList
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 16:59:47.6398----------                             Log Level: Info
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : AstroBlogManager - GetBlogList started
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:00:05.4488----------                             Log Level: Info
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : GetAstrologerList - GetAstrologerList
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:01:14.6861----------                             Log Level: Info
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : GetAstrologerSelectedExpAndLang- Selected Expertise and lang
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:01:35.3613----------                             Log Level: Info
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : GetAstrologerWithExpertAndLang- GetAstrologer WithExpert And Lang
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:01:37.6913----------                             Log Level: Info
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : GetAstrologerWithExpertAndLang- GetAstrologer WithExpert And Lang
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:29:12.6096----------                             Log Level: Info
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : GetAstrologerList - GetAstrologerList
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:30:14.5204----------                             Log Level: Info
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : GetAstrologerList - GetAstrologerList
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:30:50.0796----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:30:53.4050----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:31:29.9208----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:31:32.2528----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:31:43.4439----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:31:45.7881----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:31:57.8971----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:32:00.2167----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:32:25.2171----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:32:27.5451----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:33:03.1173----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:33:06.2286----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:33:38.0825----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+
+                            -----------Time Stamp: 2020-07-31 17:33:40.3933----------                             Log Level: Error
+                                       Logger Name : HDFC.Core.Logging.NLogManager
+                            Log Message : Unable to resolve service for type 'Microsoft.AspNetCore.SignalR.IHubContext`1[Astro.Portal.Model.CallHub]' while attempting to activate 'Astro.Portal.Service.CallController'.
+                            Exception Message: 
+                Browser Detail:  
+                Session Id:                            Extra Information:  
+

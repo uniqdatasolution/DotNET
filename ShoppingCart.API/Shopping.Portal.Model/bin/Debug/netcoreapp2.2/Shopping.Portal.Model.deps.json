@@ -1,0 +1,78 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Shopping.Portal.Model/1.0.0": {
+        "dependencies": {
+          "HDFC.Core.Common": "1.0.0.0"
+        },
+        "runtime": {
+          "Shopping.Portal.Model.dll": {}
+        }
+      },
+      "HDFC.Core.Common/1.0.0.0": {
+        "runtime": {
+          "HDFC.Core.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "HDFC.Shared.Entities/1.0.0.0": {
+        "runtime": {
+          "HDFC.Shared.Entities.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "HDFC.Core.Logging/1.0.0.0": {
+        "runtime": {
+          "HDFC.Core.Logging.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "HDFC.Shared.Resource/1.0.0.0": {
+        "runtime": {
+          "HDFC.Shared.Resource.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Shopping.Portal.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HDFC.Core.Common/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HDFC.Shared.Entities/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HDFC.Core.Logging/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HDFC.Shared.Resource/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

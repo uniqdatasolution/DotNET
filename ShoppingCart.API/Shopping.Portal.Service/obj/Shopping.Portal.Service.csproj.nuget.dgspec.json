@@ -1,0 +1,376 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Service\\Shopping.Portal.Service.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Business\\Shopping.Portal.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Business\\Shopping.Portal.Business.csproj",
+        "projectName": "Shopping.Portal.Business",
+        "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Business\\Shopping.Portal.Business.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data.Interface\\Shopping.Portal.Data.Interface.csproj": {
+                "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data.Interface\\Shopping.Portal.Data.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[6.6.0, )"
+            },
+            "System.DirectoryServices.AccountManagement": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data.Interface\\Shopping.Portal.Data.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data.Interface\\Shopping.Portal.Data.Interface.csproj",
+        "projectName": "Shopping.Portal.Data.Interface",
+        "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data.Interface\\Shopping.Portal.Data.Interface.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Model\\Shopping.Portal.Model.csproj": {
+                "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Model\\Shopping.Portal.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data\\Shopping.Portal.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data\\Shopping.Portal.Data.csproj",
+        "projectName": "Shopping.Portal.Data",
+        "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data\\Shopping.Portal.Data.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data.Interface\\Shopping.Portal.Data.Interface.csproj": {
+                "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data.Interface\\Shopping.Portal.Data.Interface.csproj"
+              },
+              "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Model\\Shopping.Portal.Model.csproj": {
+                "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Model\\Shopping.Portal.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "EnterpriseLibrary.Common.NetCore": {
+              "target": "Package",
+              "version": "[6.0.1312, )"
+            },
+            "EnterpriseLibrary.Data.NetCore": {
+              "target": "Package",
+              "version": "[6.0.1313, )"
+            },
+            "GeoTimeZone": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.6.1, )"
+            },
+            "TimeZoneConverter": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Model\\Shopping.Portal.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Model\\Shopping.Portal.Model.csproj",
+        "projectName": "Shopping.Portal.Model",
+        "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Model\\Shopping.Portal.Model.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Service\\Shopping.Portal.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Service\\Shopping.Portal.Service.csproj",
+        "projectName": "Shopping.Portal.Service",
+        "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Service\\Shopping.Portal.Service.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Business\\Shopping.Portal.Business.csproj": {
+                "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Business\\Shopping.Portal.Business.csproj"
+              },
+              "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data\\Shopping.Portal.Data.csproj": {
+                "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Data\\Shopping.Portal.Data.csproj"
+              },
+              "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Model\\Shopping.Portal.Model.csproj": {
+                "projectPath": "D:\\Projects\\AstroHelps\\Astro_Project\\Astro_Main\\Shopping.Portal.Model\\Shopping.Portal.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.5.8, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
