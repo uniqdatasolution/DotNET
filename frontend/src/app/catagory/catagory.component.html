@@ -1,0 +1,16 @@
+<h1>Product Catagories</h1>
+<div *ngIf="categoryList.length === 0">
+  <p>LOADING.....</p>
+</div>
+<div class="card mb-3" style="max-width: 540px;" *ngFor="let item of categoryList" (click)="productList(item.CategoryId)">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{item.CategoryImage}}" class="card-img" alt="{{item.CategoryName}}">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{item.CategoryName}}</h5>
+      </div>
+    </div>
+  </div>
+</div>

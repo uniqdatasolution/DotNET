@@ -1,0 +1,41 @@
+
+
+<h1>Products</h1>
+<div *ngIf="productList.length === 0">
+  <p>LOADING.....</p>
+</div>
+
+<select #Brand>
+  <option>Brand</option>
+  <option *ngFor="let option of brandList" [value]="option">{{option.BrandName}}</option>
+</select>
+<select #Color>
+  <option>Color</option>
+  <option *ngFor="let option of colorList" [value]="option">{{option.ColorName}}</option>
+</select>
+<select #Size>
+  <option>Size</option>
+  <option *ngFor="let option of sizeList" [value]="option">{{option.SizeName}}</option>
+</select>
+
+<div class="card mb-3" style="max-width: 540px;" *ngFor="let item of productList">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img *ngIf="!!item.ProductImage" src="{{item.ProductImage}}" alt="product image">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{item.ProductName}}</h5>
+        <p [innerHTML]="item.ProductDescription"></p>
+        <p class="card-text">{{item.ProductPrice | currency}}</p>
+        <select #quantity>
+          <option *ngFor="let option of quantityOptions" [value]="option">{{option}}</option>
+        </select>
+        <button (click)="addToCart(item, +quantity.value);">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-success" role="alert" *ngIf="productAdded?.id === item.id">
+    Added {{quantity.value}} {{item.ProductName}} to your <a routerLink="/cart">Cart</a>.
+  </div>
+</div>

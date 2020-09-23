@@ -1,0 +1,377 @@
+    <!-- signin and signup page         -->
+
+
+<div class="login-signup"  id="div_login" >
+    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+    <div class="modal-content">
+
+        <!-- <button type="button" class="close" data-dismiss="modal" (click)="activeModal.dismiss('Cross click')">&times;</button> -->
+        <div class="modal-body">
+            <section id="formHolder">
+                <div class="row">
+                    <!-- Brand Box -->
+                    <!-- <div class="col-sm-6 brand">
+                        <div class="heading">
+                            <img src="/assets/custom/img/main-logo.png" alt="">
+                        </div>
+                        <div class="success-msg">
+                            <p>Great! You are one of our members now</p>
+                            <a href="JavaScript:Void(0)" class="profile">Your Profile</a>
+                        </div>
+                    </div> -->
+            
+                    <!-- Form Box -->
+                    <div class="col-sm-6 form">
+
+                    <!-- Login Form -->
+                        <div class="login form-peice"   *ngIf="page =='signin'">
+                            <form class="login-form"   #userForm="ngForm" (ngSubmit)="userForm.form.valid && onSubmit(userForm)">
+                            <div class="form-group">
+                                
+                                <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                    name="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..."
+                                    [(ngModel)]="loginModel.UserName" placeholder="Email Address" #name="ngModel"
+                                    [ngClass]="{ 'is-invalid': userForm.submitted && name.invalid }" required>
+                                <div class="invalid-feedback" *ngIf="userForm.submitted && name.invalid">
+                                    <p *ngIf="name.errors.required">User Name is required</p>
+                                </div>
+                            </div>
+            
+                            <div class="form-group">
+                                
+                                <input type="password" class="form-control form-control-user" id="exampleInputPassword"
+                                    name="exampleInputPassword" placeholder="Password" #pass="ngModel"
+                                    [(ngModel)]="loginModel.Password"
+                                    [ngClass]="{ 'is-invalid': userForm.submitted && pass.invalid }" required>
+                                <div class="invalid-feedback" *ngIf="userForm.submitted && pass.invalid">
+                                    <p *ngIf="pass.errors.required">Password is required</p>
+                                </div>
+                            </div>
+
+                            <!-- <div class="form-group">
+                                <div class="custom-control custom-checkbox small">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck">
+                                    <label class="custom-control-label" for="customCheck">Remember Me</label>
+                                </div>
+                            </div> -->
+            
+                            <div class="CTA">
+                                <input type="submit" value="Login">
+                                <a href="JavaScript:Void(0)" class="switch" (click)="page='signup';customerModel = {}">I'm New</a>
+                            </div>
+
+                            <hr>
+                            <!-- <div class="g-signin2" data-onsuccess="onSignIn"><i class="fa fa-google fa-fw"></i> Login with Google</div> -->
+                            <!-- <div class="card-block">
+                                <button class="btn btn-social-icon btn-google" (click)="signInWithGoogle()"><span class="fa fa-google"></span></button>
+                                <button class="btn btn-social-icon btn-facebook" (click)="signInWithFB()"><span class="fa fa-facebook"></span></button>
+                                
+                              </div> -->
+
+                            </form>
+                        </div>
+                        <!-- End Login Form -->
+
+                        <!-- Signup Form -->
+                        <div class="signup form-peice"  *ngIf="page =='signup'">
+                            <div *ngIf="verifyMobile == false ; else elseBlock">
+                                <form class="signup-form"  #customerForm="ngForm" (ngSubmit)="customerForm.form.valid && signUp()">
+                                    <div class="form-group ">
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName" name="firstName"
+                                            placeholder="First Name" [(ngModel)]="customerModel.FirstName" #firstName="ngModel"
+                                            [ngClass]="{ 'is-invalid': customerForm.submitted && firstName.invalid }" required>
+                                        <div class="invalid-feedback" *ngIf="customerForm.submitted && firstName.invalid">
+                                            <p *ngIf="firstName.errors.required">First Name is required</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <input type="text" class="form-control  form-control-user" id="exampleLastName" name="lastName"
+                                            placeholder="Last Name" [(ngModel)]="customerModel.LastName" #lastName="ngModel"
+                                            [ngClass]="{ 'is-invalid': customerForm.submitted && lastName.invalid }" required>
+                                        <div class="invalid-feedback" *ngIf="customerForm.submitted && lastName.invalid">
+                                            <p *ngIf="lastName.errors.required">Last Name is required</p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="form-group">
+                                        <input type="email" class="form-control  form-control-user" id="exampleInputEmail" name="emailId"
+                                            placeholder="Email Address" [(ngModel)]="customerModel.ContactEmail" #emailId="ngModel"
+                                            pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                            [ngClass]="{ 'is-invalid': customerForm.submitted && emailId.invalid }" required>
+                                        <div class="invalid-feedback" *ngIf="customerForm.submitted && emailId.invalid">
+                                            <p *ngIf="emailId.errors.required">Email is required</p>
+                                            <p *ngIf="emailId.errors.email">Enter a valid email address</p>
+                                            <p *ngIf="emailId.errors.pattern">Enter a valid email address</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <input type="number" class="form-control  form-control-user" id="mobile" name="mobile"
+                                            placeholder="Mobile Number with Country Code" [(ngModel)]="customerModel.ContactMobile" #mobile="ngModel"
+                                            [ngClass]="{ 'is-invalid': customerForm.submitted && mobile.invalid }" 
+                                            required>
+                                        <div class="invalid-feedback" *ngIf="customerForm.submitted && mobile.invalid">
+                                            <p *ngIf="mobile.errors.required">Mobile Number is required</p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="form-group">
+                                        <input type="password" class="form-control  form-control-user" id="exampleInputPassword" name="password"
+                                            placeholder="Password" [(ngModel)]="customerModel.LoginPassword" #password="ngModel"
+                                            [ngClass]="{ 'is-invalid': customerForm.submitted && password.invalid }" required
+                                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+                                        <div class="invalid-feedback" *ngIf="customerForm.submitted && password.invalid">
+                                            <p *ngIf="password.errors.required">Password is required</p>
+                                            <p *ngIf="password.errors.pattern">
+                                                Password must contain the following:
+                                                lowercase letter, capital (uppercase) letter, number, Minimum 8 characters
+                                            </p>
+                                        </div>
+                                    </div>
+    
+                                    <div  class="form-group">
+                                        <input type="password" class="form-control  form-control-user" id="exampleRepeatPassword"
+                                            name="cpassword" placeholder="Confirm Password"
+                                            [(ngModel)]="customerModel.ConfirmPassword" #cpassword="ngModel"
+                                            [ngClass]="{ 'is-invalid': customerForm.submitted && cpassword.invalid }" required>
+                                        <div class="invalid-feedback" *ngIf="customerForm.submitted && cpassword.invalid">
+                                            <p *ngIf="cpassword.errors.required">Confirm Password</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <div class="row verify">
+                                            <div class="column verifytext">
+                                                {{num1}} + {{num2}} = ?
+                                            </div>
+                                            <div class="column verifyanswer">
+                                                <input type="number" class="form-control  form-control-user" id="answer"
+                                                    name="answer" placeholder="verify answer"
+                                                    [(ngModel)]="customerModel.answer" #answer="ngModel"
+                                                    [ngClass]="{ 'is-invalid': customerForm.submitted && answer.invalid }" required>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="invalid-feedback" *ngIf="customerForm.answer && answer.invalid">
+                                            <p *ngIf="answer.errors.required">Please verify the answer</p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="CTA" >
+                                        <input type="submit" value="Signup Now" id="submit">
+                                        <a href="JavaScript:Void(0)" class="switch" (click)="page='signin';loginModel = {}">I have an account</a>
+                                    </div>
+                           
+                                    </form>
+                            </div>
+                            <!-- <ng-template #elseBlock>
+                                <form class="signup-form"  #otpForm="ngForm" (ngSubmit)="otpForm.form.valid && checkOtp()">
+                                    <div class="form-group"  *ngIf="verifyMobile == true">
+                                        <label style="transform: translateY(0px);">Enter OTP sent to your mobile Number</label>
+                                        <input type="number" class="form-control  form-control-user" id="otp" name="otp"
+                                                placeholder="Enter OTP sent to your mobile no." [(ngModel)]="customerModel.otp" #otp="ngModel"
+                                                [ngClass]="{ 'is-invalid': otpForm.submitted && otp.invalid }" required>
+                                        <div class="invalid-feedback" *ngIf="otpForm.submitted && otp.invalid">
+                                            <p *ngIf="otp.errors.required">OTP is required</p>
+                                        </div>
+                                    </div>
+                                    <div class="CTA"  *ngIf="verifyMobile == true">
+                                        <input type="submit" value="Resend OTP" id="submit" (click) = "resendOtp();">
+                                        <input type="submit" value="Submit" id="submit">
+                                    </div>
+                                </form>
+                            </ng-template> -->
+                        
+                        </div>
+                        <!-- End Signup Form -->
+                    </div>
+                </div>
+            </section>    
+        </div>
+    
+    </div>
+</div>
+<!-- Signin jQuery scripts -->
+
+
+<script>
+
+            jQuery(window).load(function($){
+                wow = new WOW(
+                  {
+                    animateClass: 'animated',
+                    offset:50,
+                  }
+                );
+                wow.init();
+            });
+            //Animation
+            
+            
+            
+            // LOGIN SIGNUP
+            /*global $, document, window, setTimeout, navigator, console, location*/
+            $(document).ready(function () {
+              'use strict';
+              var usernameError = true,
+                  emailError    = true,
+                  passwordError = true,
+                  passConfirm   = true;
+            
+              // Detect browser for css purpose
+              if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+                  $('.form form label').addClass('fontSwitch');
+              }
+            
+              // Label effect
+              $('input').focus(function () {
+                  $(this).siblings('label').addClass('active');
+              });
+            
+              // Form validation
+              $('input').blur(function () {
+            
+                  // User Name
+                  if ($(this).hasClass('name')) {
+                      if ($(this).val().length === 0) {
+                          $(this).siblings('span.error').text('Please type your full name').fadeIn().parent('.form-group').addClass('hasError');
+                          usernameError = true;
+                      } else if ($(this).val().length > 1 && $(this).val().length <= 6) {
+                          $(this).siblings('span.error').text('Please type at least 6 characters').fadeIn().parent('.form-group').addClass('hasError');
+                          usernameError = true;
+                      } else {
+                          $(this).siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
+                          usernameError = false;
+                      }
+                  }
+                  // Email
+                  if ($(this).hasClass('email')) {
+                      if ($(this).val().length == '') {
+                          $(this).siblings('span.error').text('Please type your email address').fadeIn().parent('.form-group').addClass('hasError');
+                          emailError = true;
+                      } else {
+                          $(this).siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
+                          emailError = false;
+                      }
+                  }
+            
+                  // PassWord
+                  if ($(this).hasClass('pass')) {
+                      if ($(this).val().length < 8) {
+                          $(this).siblings('span.error').text('Please type at least 8 charcters').fadeIn().parent('.form-group').addClass('hasError');
+                          passwordError = true;
+                      } else {
+                          $(this).siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
+                          passwordError = false;
+                      }
+                  }
+            
+                  // PassWord confirmation
+                  if ($('.pass').val() !== $('.passConfirm').val()) {
+                      $('.passConfirm').siblings('.error').text('Passwords don\'t match').fadeIn().parent('.form-group').addClass('hasError');
+                      passConfirm = false;
+                  } else {
+                      $('.passConfirm').siblings('.error').text('').fadeOut().parent('.form-group').removeClass('hasError');
+                      passConfirm = false;
+                  }
+            
+                  // label effect
+                  if ($(this).val().length > 0) {
+                      $(this).siblings('label').addClass('active');
+                  } else {
+                      $(this).siblings('label').removeClass('active');
+                  }
+              });
+            
+            
+              // form switch
+              $('a.switch').click(function (e) {
+            
+                console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
+                  $(this).toggleClass('active');
+                  e.preventDefault();
+            
+                  if ($('a.switch').hasClass('active')) {
+                      console.log("swirtchhhhhhhhhhhhhhhhhhhhhhhhh")
+                      $(this).parents('.form-peice').addClass('switched').siblings('.form-peice').removeClass('switched');
+                  } else {
+                      $(this).parents('.form-peice').removeClass('switched').siblings('.form-peice').addClass('switched');
+                  }
+              });
+            
+            
+              // Form submit
+              $('form.signup-form').submit(function (event) {
+                  event.preventDefault();
+            
+                  if (usernameError == true || emailError == true || passwordError == true || passConfirm == true) {
+                      $('.name, .email, .pass, .passConfirm').blur();
+                  } else {
+                      $('.signup, .login').addClass('switched');
+            
+                      setTimeout(function () { $('.signup, .login').hide(); }, 700);
+                      setTimeout(function () { $('.brand').addClass('active'); }, 300);
+                      setTimeout(function () { $('.heading').addClass('active'); }, 600);
+                      setTimeout(function () { $('.success-msg p').addClass('active'); }, 900);
+                      setTimeout(function () { $('.success-msg a').addClass('active'); }, 1050);
+                      setTimeout(function () { $('.form').hide(); }, 700);
+                  }
+              });
+            
+            //  Footer accordion
+              $(document).ready(function() {
+                $('.collapse.in').prev('.panel-heading').addClass('active');
+                $('#accordion, #bs-collapse')
+                  .on('show.bs.collapse', function(a) {
+                    $(a.target).prev('.panel-heading').addClass('active');
+                  })
+                  .on('hide.bs.collapse', function(a) {
+                    $(a.target).prev('.panel-heading').removeClass('active');
+                  });
+              });
+            
+            // Header searchbox-icon
+              $(document).ready(function(){
+                var submitIcon = $('.searchbox-icon');
+                      var inputBox = $('.searchbox-input');
+                      var searchBox = $('.searchbox');
+                      var isOpen = false;
+                      submitIcon.click(function(){
+                          if(isOpen == false){
+                              searchBox.addClass('searchbox-open');
+                              inputBox.focus();
+                              isOpen = true;
+                          } else {
+                              searchBox.removeClass('searchbox-open');
+                              inputBox.focusout();
+                              isOpen = false;
+                          }
+                      });  
+                       submitIcon.mouseup(function(){
+                              return false;
+                          });
+                      searchBox.mouseup(function(){
+                              return false;
+                          });
+                      $(document).mouseup(function(){
+                              if(isOpen == true){
+                                  $('.searchbox-icon').css('display','block');
+                              }
+                          });
+                  });
+            
+              // Reload page
+              $('a.profile').on('click', function () {
+                  location.reload(true);
+              });
+            
+            
+            // Form js
+            
+            
+            
+            
+            });
+</script>
